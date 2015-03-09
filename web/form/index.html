@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Diseño de sistemas</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <!DOCTYPE html>
+    <head>
+        <link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css' rel='stylesheet' type='text/css'>
+        <link href='http://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css' rel='stylesheet' type='text/css'>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js' type='text/javascript'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript'></script>
+        <script src='http://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript'></script>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='panel panel-primary dialog-panel'>
+                <div class='panel-heading'>
+                    <h5>Registro</h5>
+                </div>
+                <div class='panel-body'>
+                    <form class='form-horizontal' role='form' action="Registro">
+                        <div class='form-group'>
+                            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Nombre</label>
+                            <div class='col-md-8'>
+                                <div class='col-md-2'>
+                                    <div class='form-group internal'>
+                                        <input class='form-control' id='id_first_name' placeholder='Nombre' type='text' name="nombre">
+                                    </div>
+                                </div>
+                                <div class='col-md-3 indent-small'>
+                                    <div class='form-group internal'>
+                                        <input class='form-control' id='id_first_name' placeholder='Apellido Paterno' type='text' name="apePat">
+                                    </div>
+                                </div>
+                                <div class='col-md-3 indent-small'>
+                                    <div class='form-group internal'>
+                                        <input class='form-control' id='id_last_name' placeholder='Apellido Materno' type='text' name="apeMat">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='form-group'>
+                            <label class='control-label col-md-2 col-md-offset-2' for='id_adults'>Edad</label>
+                            <div class='col-md-8'>
+                                <div class='col-md-2'>
+                                    <div class='form-group internal'>
+                                        <input class='form-control col-md-8' id='id_adults' placeholder='edad' type='number' name="edad">
+                                    </div>
+                                </div>
+                                <div class='col-md-3 indent-small'>
+                                    <div class='form-group internal'>
+                                        <label class='control-label col-md-2 ' for='id_adults'>Semestre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class='form-group internal'>
+                                        <select class='form-control' id='id_equipment' name="semestre">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='form-group'>
+                            <label class='control-label col-md-2 col-md-offset-2' for='id_equipment'>Licenciatura</label>
+                            <div class='col-md-8'>
+                                <div class='col-md-2'>
+                                    <div class='form-group internal'>
+                                        <select class='form-control' id='id_equipment' name="licenciatura">
+                                            <option>Civil</option>
+                                            <option>Computacion</option>
+                                            <option>Electronica</option>
+                                            <option>Mecanica</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 indent-small">
+                                    <label class='control-label col-md-2' for='id_equipment'>Sexo</label>
+                                </div>
+                                <div class='col-md-3 indent-small'>
+                                    <select class='form-control' id='id_equipment' name="genero">
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='form-group'>
+                            <div class='col-md-offset-4 col-md-3'>
+                                <button class='btn-lg btn-primary' type='submit'>Registrar</button>
+                            </div>
+                            <div class='col-md-3'>
+                                <button class='btn-lg btn-danger' style='float:right' type='submit'>Cancelar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
